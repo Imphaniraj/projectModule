@@ -8,11 +8,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String [] args) throws IOException {
-        Retrofit retrofit = new Retrofit.Builder()
-                .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://jsonplaceholder.typicode.com/")
-                .build();
-        var api = retrofit.create(JSONPlaceholderAPI.class);
+        var api = JSONPlaceholderAPI.getInstance();
         if (args.length == 0) {
             System.out.println(Lib.getGreeting());
         } else {
