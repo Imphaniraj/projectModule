@@ -1,6 +1,5 @@
-package org.phani;
-
 import org.junit.jupiter.api.Test;
+import org.phani.JSONPlaceholderAPI;
 
 import java.io.IOException;
 
